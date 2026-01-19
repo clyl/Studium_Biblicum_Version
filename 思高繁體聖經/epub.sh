@@ -24,10 +24,10 @@ printf -v output "${temp}/OEBPS/%02d_%s.xhtml" ${b} ${tcbn}
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > ${output}
 echo "<html xmlns=\"http://www.w3.org/1999/xhtml\">" >> ${output}
 echo "<head>" >> ${output}
-echo "<title>${tcbn} ${bn}</title>" >> ${output}
+echo "<title>${tcbn}</title>" >> ${output}
 echo "</head>" >> ${output}
 echo "<body>" >> ${output}
-echo "<h1>${tcbn} ${bn}</h1>" >> ${output}
+echo "<h1>${tcbn}</h1>" >> ${output}
 echo "</body>" >> ${output}
 echo "</html>" >> ${output}
 
@@ -38,10 +38,10 @@ printf -v output "${temp}/OEBPS/%02d_%s_%d.xhtml" ${b} ${tcbn} ${i}
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > ${output}
 echo "<html xmlns=\"http://www.w3.org/1999/xhtml\">" >> ${output}
 echo "<head>" >> ${output}
-echo "<title>${tcbn} ${bn} : Chapter ${i}</title>" >> ${output}
+echo "<title>${tcbn} : Chapter ${i}</title>" >> ${output}
 echo "</head>" >> ${output}
 echo "<body>" >> ${output}
-echo "<h1>${tcbn} ${bn} : Chapter ${i}</h1>" >> ${output}
+echo "<h1>${tcbn} : Chapter ${i}</h1>" >> ${output}
 
 printf -v url3 "%s_Ch_%d_.html" ${url2%_index.html} ${i}
 
